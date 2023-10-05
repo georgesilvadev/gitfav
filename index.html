@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="shortcut icon" href="./assets/star.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/logo.svg" alt="Estrela entre chaves, escrito GitFav do lado direito">
+            <div id="search">
+                <label for="input-search" class="sr-only">Digite o Github username que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button id="favorite">
+                    <i class="ph ph-star"></i>
+                    Favoritar
+                </button>
+            </div>
+        </header>
+
+        <div id="table">
+            <table>
+                <thead>
+                    <tr id="head-line">
+                        <th>Usuário</th>
+                        <th>Repositories</th>
+                        <th>Seguidores</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+            <tbody>
+                <tr></tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
